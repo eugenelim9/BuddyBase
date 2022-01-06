@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/itemRoot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp">
+    <ImageView
+        android:id="@+id/ivFriendProfilePic"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_avatar_placeholder_round"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        >
+
+        <TextView
+            android:id="@+id/tvFriendName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placeholder Name"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:singleLine="true"
+            />
+
+        <TextView
+            android:id="@+id/tvFriendPersonality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placeholder Name"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:singleLine="true"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLike"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:padding="8dp"
+                android:text="@string/like"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_buddybase_default"
+                android:drawableLeft="@drawable/ic_thumb_white"
+                android:drawableStart="@drawable/ic_thumb_white"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                />
+<!--            <androidx.appcompat.widget.AppCompatToggleButton-->
+<!--                android:id="@+id/btnLike"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:padding="8dp"-->
+<!--                android:text="@string/like"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textColor="@color/btn_like_text_color_selector"-->
+<!--                android:background="@drawable/btn_like_selector"-->
+<!--                android:drawableLeft="@drawable/ic_thumb_selector"-->
+<!--                android:drawableStart="@drawable/ic_thumb_selector"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:gravity="center_horizontal|center_vertical"-->
+<!--                android:layout_marginRight="12dp"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:textOff="@string/like"-->
+<!--                android:textOn="@string/liked"-->
+<!--                />-->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnRemove"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:padding="8dp"
+                android:text="@string/remove"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:background="@drawable/btn_buddybase_default"
+                android:backgroundTint="@color/gray_buddybase"
+                android:textAllCaps="false"
+                android:gravity="center_horizontal|center_vertical"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
